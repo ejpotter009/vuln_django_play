@@ -1,5 +1,5 @@
 app:
-  applicationId: ${APP_ID} # (required)
+  applicationId: 18a430bc-e7d8-4a4d-af95-c21784b6fabe # (required)
   env: ${APP_ENV:Travis CI}
   host: ${HOST:http://localhost:8020}
   riskLevel: Medium

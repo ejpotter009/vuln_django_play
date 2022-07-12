@@ -5,7 +5,7 @@ set -ex
 
 # We'll use this 'docker-compose exec command a lot...
 MSTR_CMD='docker-compose --file docker-micro.yml exec vuln-django'
-EXEC_CMD="${MSTR_CMD} python manage.py"
+EXEC_CMD='${MSTR_CMD} python manage.py'
 
 # Build docker images
 docker-compose -f docker-micro.yml build

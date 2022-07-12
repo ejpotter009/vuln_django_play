@@ -1,9 +1,9 @@
 # Create the base stage
 FROM python:3.10-bullseye as base
 
-RUN mkdir -p /opt/app/vuln_django
+RUN mkdir /opt/app
 COPY requirements.txt /opt/app
-COPY vuln_django/ /opt/app/vuln_django/vuln_django
+COPY vuln_django/ /opt/app/vuln_django
 COPY static/ /opt/app/vuln_django/static
 COPY templates/ /opt/app/vuln_django/templates
 COPY polls/ /opt/app/vuln_django/polls

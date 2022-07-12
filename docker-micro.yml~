@@ -29,10 +29,10 @@ services:
       - SQL_USER=django_user
       - SQL_PASSWORD=django_password
 
-  db:
-    image: postgres
-    restart: always
-    environment:
-      - POSTGRES_DB=django_db
-      - POSTGRES_USER=django_user
-      - POSTGRES_PASSWORD=django_password
+    db:
+      image: postgres
+      restart: always
+      environment:
+        - POSTGRES_DB=django_db
+        - POSTGRES_USER=django_user
+        - POSTGRES_PASSWORD=django_password
